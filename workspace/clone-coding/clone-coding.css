@@ -1,0 +1,412 @@
+@import "https://assets.ohou.se/design-system/bbf3fca1e650ee6d.css";
+@font-face {
+  font-family: OhouseIcon;
+  src: url(https://assets.ohou.se/design-system/3298ed52addbc709.eot);
+  src: url(https://assets.ohou.se/design-system/3298ed52addbc709.eot#iefix)
+      format("embedded-opentype"),
+    url(https://assets.ohou.se/design-system/d8923b386a66fd50.woff2)
+      format("woff2"),
+    url(https://assets.ohou.se/design-system/9e79341d6a2fe0d2.woff)
+      format("woff"),
+    url(https://assets.ohou.se/design-system/5355f736e6a7bc5b.ttf)
+      format("truetype"),
+    url(https://assets.ohou.se/design-system/3ba7913eab100858.svg#OhouseIcon)
+      format("svg");
+}
+@font-face {
+  font-family: OhouseSans;
+  font-weight: 700;
+  src: url(https://assets.ohou.se/design-system/b3f31cd4248f404e.woff2)
+      format("woff2"),
+    url(https://assets.ohou.se/design-system/0f909ac06f35e6b3.otf#iefix)
+      format("opentype"),
+    url(https://assets.ohou.se/design-system/858f79a098e9eabb.woff)
+      format("woff"),
+    url(https://assets.ohou.se/design-system/0f909ac06f35e6b3.otf)
+      format("opentype"),
+    url(https://assets.ohou.se/design-system/5bc99f879812c352.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: OhouseSans;
+  font-weight: 500;
+  src: url(https://assets.ohou.se/design-system/c168d3c43da800c2.woff2)
+      format("woff2"),
+    url(https://assets.ohou.se/design-system/1a838f271a125273.otf#iefix)
+      format("opentype"),
+    url(https://assets.ohou.se/design-system/5f4bd9b03223c556.woff)
+      format("woff"),
+    url(https://assets.ohou.se/design-system/1a838f271a125273.otf)
+      format("opentype"),
+    url(https://assets.ohou.se/design-system/161f1f22a19b05fb.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: OhouseSans;
+  font-weight: 400;
+  src: url(https://assets.ohou.se/design-system/8cc79ae1ff7b3e5a.woff2)
+      format("woff2"),
+    url(https://assets.ohou.se/design-system/ba62a407902a9ffd.otf#iefix)
+      format("opentype"),
+    url(https://assets.ohou.se/design-system/91ea937079bb0cc1.woff)
+      format("woff"),
+    url(https://assets.ohou.se/design-system/ba62a407902a9ffd.otf)
+      format("opentype"),
+    url(https://assets.ohou.se/design-system/4f8e060bee1f0dc4.ttf)
+      format("truetype");
+}
+html {
+  font-family: OhouseSans, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1;
+  font-size: 15px;
+  letter-spacing: -0.4px;
+  margin: 0;
+  padding: 0;
+}
+
+a,
+button {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+#wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+div.header-popup {
+  position: relative;
+  z-index: 1000;
+}
+
+.popup-left {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  background-color: #00bbff;
+  left: 0;
+}
+
+.popup-rigth {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  background-color: #00bbff;
+  right: 0;
+}
+
+.popup-content {
+  padding: 0 60px;
+  display: flex;
+  max-width: 1156px;
+  margin: 0 auto;
+}
+
+.popup-content a.content {
+  flex: 1 0 0;
+  background-image: url("https://bucketplace-v2-development.s3.amazonaws.com/uploads/store/banners/store_top_banners/164718394900874613.png");
+  background-color: #00bbff;
+  position: relative;
+  height: 50px;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+}
+
+button.popup-close {
+  border: none;
+  background: none;
+  font: inherit;
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  display: block;
+  margin: -25px 0 0;
+  padding: 12px;
+  color: white;
+  width: 48px;
+  height: 48px;
+  box-sizing: border-box;
+  font-size: 0;
+  line-height: 0;
+}
+
+button.popup-close span.font-wrap {
+  font-family: OhouseIcon;
+  vertical-align: top;
+  display: inline-block;
+  font-size: 24px;
+  line-height: 1;
+  color: #ffffff;
+}
+
+.nav-top-content {
+  position: relative;
+  background: #FFFFFF;
+  border-bottom: 1px solid #EAEDEF;
+}
+
+.nav-flex-wrap {
+  position: relative;
+  display: flex;
+  line-height: 0;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  max-width: 1256px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+.nav-home {
+  margin-right: 35px;
+  flex: 0 0 auto;
+  color: #212629;
+}
+
+.nav-home a {
+  height: 30px;
+  border: none;
+  background: none;
+  display: inline-flex;
+  align-items: center;
+  margin: -4px;
+  padding: 4px;
+  font-size: 0;
+  line-height: 0;
+  color: #212629;
+  outline: none;
+}
+
+.nav-category {
+  flex: 1 1 0px;
+  white-space: nowrap;
+}
+
+.nav-category .community {
+  border: none;
+  background: none;
+  font: inherit;
+  position: relative;
+  display: inline-block;
+  margin: 0 10px;
+  padding: 21px 5px 15px;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: bold;
+  outline: none;
+  color: #35C5F0;
+}
+
+.nav-category .category {
+  border: none;
+  background: none;
+  font: inherit;
+  position: relative;
+  display: inline-block;
+  margin: 0 10px;
+  padding: 21px 5px 15px;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: bold;
+  color: #2F3438;
+  outline: none;
+}
+
+.nav-category span {
+  display: inline-block;
+  margin: -4px;
+  padding: 4px;
+  border-radius: 3px
+}
+
+.nav-category-mobile {
+  display: none;
+  margin-right: -7px;
+  flex: 1;
+}
+
+.nav-category-mobile .flex-wrap-mobile{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  line-height: 0;
+}
+
+.menu-mobile {
+  flex: 0 0 auto;
+  display: none;
+  margin-left: -7px;
+  
+}
+
+.menu-mobile button, .button-wrap button {
+  display: inline-block;
+  border: none;
+  background: none;
+  font: inherit;
+  padding: 6px;
+  margin: 3px 1px;
+  color: #2F3438;
+  outline: none;
+}
+
+span.font-wrap {
+  display: inline-block;
+  font-size: 24px;
+  line-height: 1;
+}
+
+span.menu::before {
+  content: "\ea05";
+  font-family: OhouseIcon;
+  vertical-align: top;
+}
+
+span.search::before {
+  content: "\ea4d";
+  font-family: OhouseIcon;
+  vertical-align: top;
+}
+
+span.cart::before {
+  content: "\e94e";
+  font-family: OhouseIcon;
+  vertical-align: top;
+}
+
+.category-mobile {
+  padding: 0px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  overflow: auto;
+  background: rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(234, 237, 239);
+}
+
+.category-mobile > div {
+  flex: 1 0 0px;
+}
+
+.category-mobile nav {
+  height: 40px;
+  justify-content: center;
+  margin: 0px -2px;
+  display: flex;
+  align-items: stretch;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.category-mobile nav span {
+  margin: 0px 2px;
+  height: inherit;
+  display: block;
+}
+
+.category-mobile nav span a {
+  padding: 11px 5px;
+  margin: 0px;
+  border: none;
+  background: none;
+  font: inherit;
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  vertical-align: top;
+  text-align: center;
+  box-sizing: border-box;
+  height: inherit;
+  outline: none;
+}
+
+.content-wrap-mobile {
+  padding: 4px;
+  margin: -4px;
+}
+
+.content-wrap-mobile p {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  color: rgb(47, 52, 56);
+}
+
+.selected p {
+  position: relative;
+  font-weight: 700;
+  color: rgb(53, 197, 240);
+}
+
+.selected::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(53, 197, 240);
+  transition: transform 0.2s ease 0s;
+  transform: scale(1);
+}
+
+@media (max-width: 391px){
+  #wrap {
+    display: none;
+  }
+
+  div.nav-flex-wrap {
+    justify-content: space-between;
+    height: 50px;
+  }
+
+  div.nav-category {
+    display: none;
+  }
+
+  div.nav-home {
+    margin-right: 0;
+  }
+
+  div.nav-home svg {
+    height: 26px;
+  }
+
+  .menu-mobile {
+    display: block;
+  }
+
+  .nav-category-mobile {
+    display: block;
+  }
+
+  .nav-flex-wrap {
+    padding: 0 16px;
+  }
+
+  .nav-home {
+    position: absolute;
+    flex: 0 0 auto;
+    left: 50%;
+    top: 50%;
+    color: #212629;
+    transform: translate(-50%, -50%);
+  }
+
+}
